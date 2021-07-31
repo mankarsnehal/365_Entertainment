@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* ############################## Basic Declarations  ############################### */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #111;
+}
+
+a {
+	font-size: 1.6rem;
+	text-decoration: none;    
+}
+
+p, li {
+	font-size: 1.6rem;
+	margin-bottom: 0.5em;
+	letter-spacing: 0.1em;
+}
+
+h1, h2, h3 {
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+	font-weight: 500;
+}
+
+
+/* ###################################### Navbar Styling ###################################### */
+
+.navbar {
+	background: linear-gradient(to bottom right, #ffff99 0%, #ccffcc 100%);
+	padding: 20px 30px;
+}
+
+.navbar .logo {
+	display: inline-block;
+	color: #222;
+	background: linear-gradient(to right, #993300 6%, #ffff99 95%);
+	box-shadow: 5px 5px 10px 2px #404040;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 2px 5px;
+	font-family: Grandstander;
+	font-weight: 200;
+	font-size: 3rem;
+	float: left;
+}
+
+.navbar .list {
+	display: left;
+	margin: 15px 0;
+	padding: 0 50px;
+}
+
+.navbar::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.navbar .list .items {
+	display: inline-block;
+	margin: 0 20px;
+	font-weight: 700;
+}
+
+/* ########################################## Header Styling ################################## */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #111;
+	color: #fff;
+	line-height: 1.6;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	height: 95vh;
+	width: 100vw;
+	margin-bottom: 2rem;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+	opacity: 1;
+}
+
+.buttons button#next {
+	position: absolute;
+	top: 40%;
+	right: 15px;
+}
+
+.buttons button#prev {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+}
+
+.buttons button {
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+	padding: 13px 15px;
+	border-radius: 50%;
+	outline: none;
+}
+
+.buttons button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+@media (max-width: 500px) {
+	.slide .content {
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+
+	.slide.current .content {
+		transform: translateY(-300px);
+	}
+}
+
+
+/* ##################### Backgorund Images ########################### */
+ 
+.slide:first-child {
+  background: url('dhurla.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('saaho.jpeg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('shaadi.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('mangal.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('shakuntala.jpg') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('raazi.jpg') no-repeat
+    center center/cover;
+}
+
+/* ####################################### Search Bar Styling ################################# */
+
+.searchbar {
+	margin-bottom: 6rem;
+}
+
+.searchbar .selection {
+	padding: 1rem;
+	margin: 0 0 0 1rem;
+	background-color: yellow;
+	text-align: center;
+	width: 20%;
+	border-radius: 5px;
+}
+
+.searchbar .search {
+	padding: 1rem;
+	margin: 1rem 0 0 1rem;
+	background-color: yellow;
+	text-align: center;
+	width: 72%;
+	border-radius: 5px;
+}
+
+.searchbar .icon {
+	padding: 1rem;
+	margin: 1rem 0 1rem 0;
+}
+
+
+
+/* ###################################### Main-Content Styling ################################ */
+
+.main-content {
+	background-color: #111;
+}
+
+.container {
+	max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-content .prim-head {
+	color: #fff;
+	border-bottom: 1px solid #ababab;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.main-content .images {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap {
+	display: inline-block;
+	height: 210px;
+	width: 180px;
+	border: 2px solid black;
+	position: relative;
+}
+
+.img-wrap {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	bottom: 0;
+	background-color: #121212;
+	opacity: 0.5;
+}
+
+.text-wrap {
+	width: 100%;
+	color: rgb(247, 241, 241);
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+}
+
+
+
+/* ###################################### Movies Posters ###################################### */
+
+.div-wrap1 {
+	background: url('shankar.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap2 {
+	background: url('blank.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap3 {
+	background: url('munna.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap4 {
+	background: url('simba.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap5 {
+	background: url('haider.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap6 {
+	background: url('raone.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap7 {
+	background: url('double.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap8 {
+	background: url('haseena.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap9 {
+	background: url('bareili.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap10 {
+	background: url('money.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap11 {
+	background: url('enter.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap12 {
+	background: url('super.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap13 {
+	background: url('street.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap14 {
+	background: url('double.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap15 {
+	background: url('english.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap16 {
+	background: url('kedarnath.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap17 {
+	background: url('student.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap18 {
+	background: url('wanted.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap19 {
+	background: url('ventilator.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap20 {
+	background: url('jayjaykar.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap21 {
+	background: url('sairat.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap22 {
+	background: url('dhadakebaaz.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap23 {
+	background: url('fatt.jpg') no-repeat
+		center top/cover;
+}
+
+.div-wrap24 {
+	background: url('far.jpg') no-repeat
+		center top/cover;
+}
+
+
+/* ###################################### Footer Styling ###################################### */
+
+.footer {
+	background: linear-gradient(to bottom right, #ffff99 0%, #ccffcc 100%);
+	padding: 20px 30px;
+	margin: 50px 0;
+}
+
+.footer .logo {
+	display: inline-block;
+	color: #111;
+	background: linear-gradient(to right, #993300 6%, #ffff99 95%);
+	box-shadow: 5px 5px 20px 0px #404040;
+	border-radius: 5px;
+	margin: 0 20px;
+	padding: 2px 8px;
+	font-family: Grandstander;
+	font-weight: 200;
+	font-size: 3rem;
+	float: left;
+}
+
+.footer .rights {
+	display: inline-block;
+	color: #111;
+	padding: 12px 0;
+}
+
+
+
+/* ###################################### Media Queries ############################### */
+
+@media (max-width: 500px) {
+	html {
+		font-size: 50%;
+	}
+
+	.images {
+		flex-wrap: wrap;
+	}
+}
